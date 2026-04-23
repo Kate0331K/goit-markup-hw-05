@@ -152,8 +152,8 @@ button {
 
 .hero {
     background-color: #2e2f42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
+    background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url("../images/people-office.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -188,8 +188,8 @@ button {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -261,9 +261,9 @@ button {
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
     box-shadow:
-            0px 1px 6px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 2px 1px rgba(46, 47, 66, 0.08);
+        0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-card-content {
@@ -272,7 +272,7 @@ button {
 }
 
 .team-name {
-    margin: 0 0 8px 0;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -281,7 +281,7 @@ button {
 }
 
 .team-text {
-    margin: 0 0 8px 0;
+    margin-bottom: 8px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -293,9 +293,14 @@ button {
     gap: 24px;
 }
 
-.team-social-link {
+.team-social-item {
     width: 40px;
     height: 40px;
+}
+
+.team-social-link {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: #4d5ae5;
     display: flex;
@@ -319,7 +324,7 @@ button {
 }
 
 .portfolio-title {
-    margin: 0 0 72px 0;
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -342,7 +347,8 @@ button {
 
 .portfolio-item:hover,
 .portfolio-item:focus-within {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    box-shadow:
+        0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -359,7 +365,7 @@ button {
 }
 
 .portfolio-subtitle {
-    margin: 0 0 8px 0;
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -368,7 +374,6 @@ button {
 }
 
 .portfolio-text {
-    margin: 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -394,14 +399,6 @@ button {
     transform: translateY(0%);
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus-within {
-    box-shadow:
-        0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
 .footer {
     background-color: #2e2f42;
     padding: 100px 0;
@@ -424,21 +421,23 @@ button {
 
 .footer-text {
     max-width: 264px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: #f4f4fd;
 }
 
-.footer-social-block {
-    margin-right: 80px;
+.footer-subscribe-box {
+    margin-left: auto;
 }
 
 .footer-social-text,
 .footer-subscribe-text {
+    margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
-    margin-bottom: 16px;
 }
 
 .footer-social-list {
@@ -454,8 +453,8 @@ button {
 .footer-social-link {
     width: 100%;
     height: 100%;
-    background-color: #4d5ae5;
     border-radius: 50%;
+    background-color: #4d5ae5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -483,15 +482,15 @@ button {
 .footer-input {
     width: 264px;
     height: 40px;
+    padding-left: 16px;
     border: 1px solid #ffffff;
     border-radius: 4px;
     background-color: transparent;
-    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
     color: #ffffff;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -504,10 +503,22 @@ button {
 }
 
 .footer-subscribe-btn {
+    min-width: 165px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4d5ae5;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -535,7 +546,8 @@ button {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition:
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -554,10 +566,11 @@ button {
     transform: translate(-50%, -50%);
     background-color: #fcfcfc;
     border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14),
+    box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.14),
         0 1px 3px rgba(0, 0, 0, 0.12),
         0 2px 1px rgba(0, 0, 0, 0.2);
-    padding: 72px 24px 24px 24px;
+    padding: 72px 24px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -571,15 +584,16 @@ button {
     right: 24px;
     width: 24px;
     height: 24px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: #e7e9fc;
     padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: #e7e9fc;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -604,13 +618,13 @@ button {
 ========================= */
 
 .modal-title {
+    margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 16px;
 }
 
 /* =========================
@@ -641,11 +655,11 @@ button {
 .modal-input {
     width: 100%;
     height: 40px;
+    padding-left: 38px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
     outline: transparent;
-    padding-left: 38px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -674,12 +688,12 @@ button {
 .modal-textarea {
     width: 100%;
     height: 120px;
-    resize: none;
+    padding: 8px 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     background-color: transparent;
+    resize: none;
     outline: transparent;
-    padding: 8px 16px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -715,21 +729,26 @@ button {
 .modal-checkbox-custom {
     width: 16px;
     height: 16px;
+    margin-right: 8px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    margin-right: 8px;
+    background-color: transparent;
     flex-shrink: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    fill: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox-icon {
     fill: transparent;
+}
+
+.modal-checkbox:checked+.modal-checkbox-label .modal-checkbox-custom {
+    background-color: #404bbf;
+    border: none;
 }
 
 .modal-checkbox:checked+.modal-checkbox-label .modal-checkbox-icon {
@@ -753,35 +772,18 @@ button {
     border: none;
     border-radius: 4px;
     background-color: #4d5ae5;
-    color: #ffffff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    color: #ffffff;
     cursor: pointer;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-submit-btn:hover,
 .modal-submit-btn:focus {
     background-color: #404bbf;
-}
-
-/* =========================
-   VISUALLY HIDDEN
-========================= */
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
 }
