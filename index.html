@@ -385,54 +385,141 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-logo-block">
-                <a href="./index.html" class="logo footer-logo">
-                    <span class="logo-accent">Web</span>Studio
-                </a>
-                <p class="footer-text">
-                    Increase the flow of customers and sales for your business with digital
-                    marketing &amp; growth solutions.
-                </p>
-            </div>
+<footer class="footer">
+    <div class="container footer-container">
 
-            <div class="footer-social-block">
-                <p class="footer-social-text">Social media</p>
-
-                <ul class="footer-social-list">
-                    <li class="footer-social-item">
-                        <a href="#" class="footer-social-link" aria-label="Instagram">
-                            <svg class="footer-social-icon" width="24" height="24">
-                                <use href="./images/icons.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="#" class="footer-social-link" aria-label="Twitter">
-                            <svg class="footer-social-icon" width="24" height="24">
-                                <use href="./images/icons.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="#" class="footer-social-link" aria-label="Facebook">
-                            <svg class="footer-social-icon" width="24" height="24">
-                                <use href="./images/icons.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-item">
-                        <a href="#" class="footer-social-link" aria-label="LinkedIn">
-                            <svg class="footer-social-icon" width="24" height="24">
-                                <use href="./images/icons.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <!-- ЛОГО -->
+        <div class="footer-logo-block">
+            <a href="./index.html" class="logo footer-logo">
+                <span class="logo-accent">Web</span><span class="footer-logo-studio">Studio</span>
+            </a>
+            <p class="footer-text">
+                Increase the flow of customers and sales for your business with digital
+                marketing &amp; growth solutions.
+            </p>
         </div>
-    </footer>
-</body>
 
-</html>
+        <!-- СОЦСЕТИ -->
+        <div class="footer-social-block">
+            <p class="footer-social-text">Social media</p>
+
+            <ul class="footer-social-list">
+                <li class="footer-social-item">
+                    <a href="#" class="footer-social-link" aria-label="Instagram">
+                        <svg class="footer-social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a href="#" class="footer-social-link" aria-label="Twitter">
+                        <svg class="footer-social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a href="#" class="footer-social-link" aria-label="Facebook">
+                        <svg class="footer-social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-social-item">
+                    <a href="#" class="footer-social-link" aria-label="LinkedIn">
+                        <svg class="footer-social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- SUBSCRIBE -->
+        <div class="footer-subscribe-box">
+            <p class="footer-subscribe-text">Subscribe</p>
+
+            <form class="footer-form">
+                <label class="footer-label">
+                    <input type="email" name="footer-email" id="footer-email" class="footer-input"
+                        placeholder="E-mail" />
+                </label>
+
+                <button type="submit" class="footer-subscribe-btn">
+                    Subscribe
+                    <svg class="footer-subscribe-icon" width="24" height="24">
+                        <use href="./images/icons.svg#send"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+    </div>
+</footer>
+
+<!-- МОДАЛКА -->
+<div class="backdrop is-open">
+    <div class="modal">
+        <button type="button" class="modal-close-btn" aria-label="Close modal">
+            <svg class="modal-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#close"></use>
+            </svg>
+        </button>
+
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+
+        <form class="modal-form">
+            <div class="modal-field">
+                <label class="modal-label" for="user-name">Name</label>
+                <div class="modal-input-wrap">
+                    <input class="modal-input" type="text" name="user-name" id="user-name" />
+                    <svg class="modal-input-icon" width="12" height="12">
+                        <use href="./images/icons.svg#name"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-field">
+                <label class="modal-label" for="user-phone">Phone</label>
+                <div class="modal-input-wrap">
+                    <input class="modal-input" type="tel" name="user-phone" id="user-phone" />
+                    <svg class="modal-input-icon" width="13" height="13">
+                        <use href="./images/icons.svg#phone"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-field">
+                <label class="modal-label" for="user-email">Email</label>
+                <div class="modal-input-wrap">
+                    <input class="modal-input" type="email" name="user-email" id="user-email" />
+                    <svg class="modal-input-icon" width="15" height="12">
+                        <use href="./images/icons.svg#email"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="modal-comment-field">
+                <label class="modal-label" for="user-comment">Comment</label>
+                <textarea class="modal-textarea" name="user-comment" id="user-comment"
+                    placeholder="Text input"></textarea>
+            </div>
+
+            <div class="modal-checkbox-field">
+                <input class="modal-checkbox visually-hidden" type="checkbox" name="user-privacy" id="user-privacy"
+                    value="true" />
+                <label class="modal-checkbox-label" for="user-privacy">
+                    <span class="modal-checkbox-custom"></span>
+                    I accept the terms and conditions of the
+                    <a class="modal-policy-link" href="">Privacy Policy</a>
+                </label>
+            </div>
+
+            <button type="submit" class="modal-submit-btn">Send</button>
+        </form>
+    </div>
+</div>
+                    
+                    </body>
+                    
+                    </html>
