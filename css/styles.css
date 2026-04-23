@@ -744,7 +744,7 @@ button {
 
 .modal-checkbox:checked+.modal-checkbox-label .modal-checkbox-custom {
     background-color: #404bbf;
-    border: none;
+    border: 1px solid #404bbf;
 }
 
 .modal-checkbox-icon {
